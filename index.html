@@ -14,15 +14,32 @@
     <style>
         .card {
             border: 0rem;
-        }
-
-        .card-header {
-            background: url(assets/images/section.png) repeat-x;
-        }
-
-        footer {
-            background: url(assets/images/section.png) repeat-x;
+            background: url(assets/images/section-silver.png) repeat-x;
             background-color: white;
+        }
+
+        .silver-punch {
+            background: url(assets/images/section-silver.png) repeat-x;
+            background-color: white;
+        }
+
+        .golden-punch {
+            background: url(assets/images/section-gold-exp.png) repeat-x;
+            background-color: #fcff52;
+        }
+        .golden-gradient {
+            text-shadow: 0 1px 0 #fff000;
+            background: linear-gradient(to bottom,#fac826 0,#ecc557 47%,#ebc868 50%,#ebc868 50%,#e1b02a 51%,#c4932e 100%);
+        }
+
+        .silver-gradient {
+            text-shadow: 0 0px 0 #ffffff;
+            background: linear-gradient(to bottom,#ebebec 0,#f1f1f1 56%,#e1e1e1 62%,#e2e3e4 100%);
+        }
+
+        .rose-punch {
+            background: url(assets/images/section-rose.png) repeat-x;
+            background-color: #fce2af;
         }
     </style>
 </head>
@@ -45,13 +62,13 @@
             </form>
         </div>
     </nav>
-    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar nav-underline  shadow-sm"
-        style="font-weight: 900; font-family: 'Playfair Display', serif; text-transform: uppercase; box-shadow: 0 1px 0 #3b3a3b; text-shadow: 0 1px 0 #fff000; background: linear-gradient(to bottom,#fac826 0,#ecc557 47%,#ebc868 50%,#ebc868 50%,#e1b02a 51%,#c4932e 100%); padding-top: 0px;padding-bottom: 0px; padding-left: 0px;padding-right: 0px;">
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar nav-underline  shadow-sm golden-punch"
+        style="font-weight: 900; font-family: 'Playfair Display', serif; text-transform: uppercase; box-shadow: 0 1px 0 #3b3a3b; padding-top: 0px;padding-bottom: 0px; padding-left: 0px;padding-right: 0px;">
         <div class="container navbar-nav d-flex justify-content-around">
             <ul class="navbar-expand navbar-nav bd-navbar-nav flex-column flex-sm-row" style="width: 100%;">
-                <span style="height: 2px; width: 0px;"></span>
-                <li class="nav-item"
-                    style="box-shadow: 0 1px 0 #fff; text-shadow: 0 0px 0 #ffffff; background: linear-gradient(to bottom,#ebebec 0,#f1f1f1 56%,#e1e1e1 62%,#e2e3e4 100%); text-align: center; color: black; padding-left: 2rem; padding-right: 2rem;">
+                <!-- <span style="height: 2px; width: 0px;"></span> -->
+                <li class="nav-item silver-punch"
+                    style="box-shadow: 0 1px 0 #fff; text-align: center; color: black; padding-left: 2rem; padding-right: 2rem;">
                     <a class="nav-link active" href="#" style="color: black">Home</a>
                 </li>
                 <li class="nav-item" style="padding-left: 1rem; padding-right: 1rem;">
@@ -86,8 +103,8 @@
                 Mater</h1>
         </div>
     </div>
-    <div class="p-0 m-0 shadow-sm"
-        style="box-shadow: 0 1px 0 #3b3a3b; text-shadow: 0 1px 0 #fff000; background: linear-gradient(to bottom,#fac826 0,#ecc557 47%,#ebc868 50%,#ebc868 50%,#e1b02a 51%,#c4932e 100%);">
+    <div class="p-0 m-0 shadow-sm golden-punch"
+        style="box-shadow: 0 1px 0 #3b3a3b;">
         <div class="container">
             <p class="display-5 py-3 text-center" style="font-size: 1.85em; font-family: 'Playfair Display', serif;">
                 Latest Updates</p>
@@ -98,16 +115,17 @@
             <div class="row mb-2">
                 <div class="col-md-6">
                     <div class="card flex-md-row mb-4 box-shadow h-md-250 shadow">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <strong class="d-inline-block mb-2 text-primary">World</strong>
-                            <h3 class="mb-0">
-                                <a class="text-dark" href="#">Featured post</a>
-                            </h3>
-                            <div class="mb-1 text-muted">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                        <div class="card-body d-flex flex-column align-items-start p-0">
+                            <div class="card-header silver-punch" style="width: 100%;">
+                                <strong class="d-inline-block mb-2 text-primary">Recent</strong>
+                                <h3 class="mb-0">
+                                    <a class="text-dark" href="#">Featured post</a>
+                                </h3>
+                            </div>
+                            <p class="card-text mb-auto px-4 py-4">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content.</p>
-                            <a href="#">Continue reading</a>
+                            <div class="mb-1 text-muted px-4">Nov 12</div>
                         </div>
                         <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
                             alt="Thumbnail [200x250]" style="width: 200px; height: 250px;"
@@ -117,16 +135,17 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card flex-md-row mb-4 box-shadow h-md-250 shadow">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <strong class="d-inline-block mb-2 text-success">Design</strong>
-                            <h3 class="mb-0">
-                                <a class="text-dark" href="#">Post title</a>
-                            </h3>
-                            <div class="mb-1 text-muted">Nov 11</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                        <div class="card-body d-flex flex-column align-items-start p-0">
+                            <div class="card-header silver-punch" style="width: 100%;">
+                                <strong class="d-inline-block mb-2 text-primary">Recent</strong>
+                                <h3 class="mb-0">
+                                    <a class="text-dark" href="#">Featured post</a>
+                                </h3>
+                            </div>
+                            <p class="card-text mb-auto px-4 py-4">This is a wider card with supporting text below as a natural
                                 lead-in to
                                 additional content.</p>
-                            <a href="#">Continue reading</a>
+                            <div class="mb-1 text-muted px-4">Nov 12</div>
                         </div>
                         <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
                             alt="Thumbnail [200x250]" style="width: 200px; height: 250px;"
@@ -136,8 +155,8 @@
                 </div>
             </div>
         </div>
-        <div class="p-0 m-0 shadow-sm"
-            style="box-shadow: 0 1px 0 #3b3a3b; text-shadow: 0 1px 0 #fff000; background: linear-gradient(to bottom,#fac826 0,#ecc557 47%,#ebc868 50%,#ebc868 50%,#e1b02a 51%,#c4932e 100%);">
+        <div class="p-0 m-0 shadow-sm rose-punch"
+            style="box-shadow: 0 1px 0 #3b3a3b;">
             <div class="container">
                 <p class="display-5 py-3 text-center"
                     style="font-size: 1.85em; font-family: 'Playfair Display', serif;">Catch up with Alumni Events</p>
@@ -184,8 +203,8 @@
             </div>
         </div>
     </div>
-    <div class="p-0 m-0 shadow-sm"
-        style="box-shadow: 0 1px 0 #3b3a3b; text-shadow: 0 1px 0 #fff000; background: linear-gradient(to bottom,#fac826 0,#ecc557 47%,#ebc868 50%,#ebc868 50%,#e1b02a 51%,#c4932e 100%);">
+    <div class="p-0 m-0 shadow-sm rose-punch"
+        style="box-shadow: 0 1px 0 #3b3a3b;">
         <div class="container">
             <p class="display-5 py-3 text-center"
                 style="margin-bottom: 0rem; font-size: 1.85em; font-family: 'Playfair Display', serif;">Browse through
@@ -200,8 +219,8 @@
                 Visit the Photo Gallery</div>
         </div>
     </div>
-    <div class="p-0 m-0 shadow-sm"
-        style="box-shadow: 0 1px 0 #3b3a3b; text-shadow: 0 1px 0 #fff000; background: linear-gradient(to bottom,#fac826 0,#ecc557 47%,#ebc868 50%,#ebc868 50%,#e1b02a 51%,#c4932e 100%);">
+    <div class="p-0 m-0 shadow-sm golden-gradient"
+        style="box-shadow: 0 1px 0 #3b3a3b;">
         <div class="container">
             <p class="display-5 py-3 text-center"
                 style="margin-left: 1rem; margin-right: 1rem; font-size: 1.85em; font-family: 'Playfair Display', serif;">
@@ -212,7 +231,7 @@
     <div class="container">
         <div class="card-deck mb-3 text-center">
             <div class="card mb-4 shadow" style="margin-left: 0px;">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -227,7 +246,7 @@
                 </div>
             </div>
             <div class="card mb-4 shadow">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -242,7 +261,7 @@
                 </div>
             </div>
             <div class="card mb-4 shadow">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -259,7 +278,7 @@
             <div class="card mb-4 shadow" style="
     margin-right: 0px;
 ">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -278,7 +297,7 @@
             <div class="card mb-4 shadow" style="
     margin-left: 0px;
 ">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -293,7 +312,7 @@
                 </div>
             </div>
             <div class="card mb-4 shadow">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -308,7 +327,7 @@
                 </div>
             </div>
             <div class="card mb-4 shadow">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -325,7 +344,7 @@
             <div class="card mb-4 shadow" style="
     margin-right: 0px;
 ">
-                <div class="card-header">
+                <div class="card-header silver-punch">
                     <h4 class="my-0 font-weight-normal">Name</h4>
                 </div>
                 <div class="card-body">
@@ -341,7 +360,7 @@
             </div>
         </div>
     </div>
-    <footer class="p-0 m-0" style="color: black;">
+    <footer class="silver-punch p-0 m-0" style="color: black;">
         <div class="container">
             <div class="row py-3">
                 <div class="col-12 col-md">
